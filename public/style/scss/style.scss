@@ -1,0 +1,80 @@
+//variable
+
+$font-primary: "Jura", sans-serif;
+$font-secondary: "Tajawal", sans-serif;
+
+$linkColor: #9f7a49;
+$bcColor: #f4f4f4;
+$greyColorPrimary: rgba(
+  $color: grey,
+  $alpha: 0.3,
+);
+
+$greyColorSecondary: rgba(
+  $color: grey,
+  $alpha: 0.5,
+);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: $font-primary;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.menuShow {
+  right: 0 !important;
+}
+
+.shadowMenu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  z-index: -1;
+}
+
+@keyframes shadowMenuShow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shadowMenuHide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@import "includes/reg-log";
+@import "includes/header";

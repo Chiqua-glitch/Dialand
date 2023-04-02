@@ -1,0 +1,98 @@
+.formLogin,
+.formRegister {
+  text-transform: capitalize;
+  div.title {
+    padding: 6rem;
+    background: $bcColor;
+    text-align: center;
+    h1 {
+      letter-spacing: 3px;
+      font-family: $font-secondary;
+      font-size: 3rem;
+      margin: 0;
+    }
+    p {
+      a {
+        transition: 0.25s;
+        &:hover {
+          color: $linkColor;
+        }
+      }
+    }
+  }
+  form {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    background-color: $bcColor;
+    padding: 3rem;
+    label {
+      position: absolute;
+      left: -5000rem;
+    }
+    input {
+      padding: 1.5rem;
+      width: 100%;
+      border: 1px solid $greyColorPrimary;
+      outline: none;
+      transition: 0.25s;
+      &::placeholder {
+        color: $greyColorSecondary;
+      }
+      &:focus {
+        border-color: $linkColor;
+      }
+    }
+    input[type="submit"] {
+      width: max-content;
+      padding: 1.5rem 4rem;
+      border: 1px solid $linkColor;
+      color: $linkColor;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      transition: 0.25s;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        background-color: $linkColor;
+      }
+    }
+
+    a {
+      display: block;
+      color: black;
+      transition: 0.25s;
+      &:hover {
+        color: $linkColor;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 20px;
+      border-top: 2px solid rgba($color: grey, $alpha: 0.3);
+      padding-top: 2.5rem;
+      margin-top: 2rem;
+    }
+  }
+  div.more {
+    width: 65%;
+    margin: 0 auto;
+    a {
+      color: $linkColor;
+    }
+  }
+  div {
+    margin-bottom: 3rem;
+    p.error {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.formRegister {
+  input[type="submit"] {
+    margin-bottom: 3rem;
+  }
+}

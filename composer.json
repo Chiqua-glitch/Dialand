@@ -1,0 +1,9 @@
+{
+    "name": "quentin/darland",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Darland\\": "src/"
+        }
+    }
+}
